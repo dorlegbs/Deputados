@@ -5,6 +5,7 @@ df = pd.read_csv("deputados_2022.csv")
 
 st.dataframe(df)
 
-partido_input = input("Digite o partido ").upper()
+st.title("Consulta de Deputados por Partido")
 
-st.inputbox
+partido_input = st.text_input("Digite o partido ").upper()
+
