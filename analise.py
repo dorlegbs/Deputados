@@ -7,6 +7,6 @@ df = pd.read_csv(url)
 df_masculino = df[df["sexo"] == 'M']
 nome_masculino = df_masculino["nome"]
 
-print(nomes_masculinos)
+print(nome_masculino)
 
 nomes_masculinos.to_csv("nomes_masculinos.csv", index=False)
