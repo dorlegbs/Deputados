@@ -1,12 +1,11 @@
+import streamlit as st
+
 import pandas as pd
 
 url = "https://raw.github.com/dorlegbs/Deputados/blob/main/deputados_2022.csv"
 
-df = pd.read_csv(url)
+df = pd.read_csv("deputados_2022.csv")
 
-df_masculino = df[df["sexo"] == 'M']
-nomes_masculinos = df_masculino["nome"]
+df.datafram(df)
 
-print(nomes_masculinos)
 
-nomes_masculinos.to_csv("nomes_masculinos.csv", index=False)
