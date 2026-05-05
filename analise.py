@@ -12,7 +12,6 @@ partido_input = st.text_input("Digite a sigla do partido ").upper()
 if partido_input:
     partido_input = partido_input.upper()
 
-    # filtrar
     df_filtrado = df[df["partido"].str.upper() == partido_input]
 
     if df_filtrado.empty:
