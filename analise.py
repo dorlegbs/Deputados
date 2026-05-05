@@ -7,3 +7,4 @@ st.dataframe(df)
 
 partido_input = input("Digite o partido ").upper()
 
+st.inputbox
