@@ -15,7 +15,7 @@ if partido_input:
     df_filtrado = df[df["partido"].str.upper() == partido_input]
 
     if df_filtrado.empty:
-        st.warning("Nenhum deputado encontrado para esse partido.")
+        st.warning("Esse partido não existe.")
     else:
         st.subheader(f"Deputados do partido {partido_input}")
         st.write(df_filtrado["nome"])
