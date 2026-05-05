@@ -9,4 +9,4 @@ nome_masculino = df_masculino["nome"]
 
 print(nomes_masculinos)
 
-nomes_masculinos.to_csv("nomes_masculinos.csv")
+nomes_masculinos.to_csv("nomes_masculinos.csv", index=False)
